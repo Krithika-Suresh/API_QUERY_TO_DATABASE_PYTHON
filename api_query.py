@@ -11,7 +11,7 @@ def api_call(page_number = 1):
     load_dotenv()
     # global page_number
     
-    APIKEY = os.getenv("API_KEY")
+    APIKEY = os.getenv("API_KEY_ALIENVAULT")
     url = "https://otx.alienvault.com/api/v1/pulses/subscribed?page="+str(page_number)
     # url = "https://otx.alienvault.com/browse/global/pulses?include_inactive=0&sort=-modified&page=1&limit=10"
     headers = {
